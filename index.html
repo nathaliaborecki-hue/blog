@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-          <style>
+        <style>
             header {
                 background-color: #044080;
                 color: #ffffff;
@@ -23,94 +23,98 @@
                 width: 80px;
                 height: 80px;
             }
+
             p {
-font-weight: bold;
-}.artigo-autor {
-font-weight: bold;
-}
-        footer {
-            background-color: #183C63;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+                font-weight: bold;
+            }
+
+            .artigo-autor {
+                font-weight: bold;
+            }
+
+            footer {
+                background-color: #183C63;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
         </style>
     </head>
 
     <body>
- <header>   
-        <h1>Meu blog</h1>
-        <p>Vou compartilhar conhecimentos sobre a fé católica.</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-        <button>👎​<span>0</span></button>
-      
+        <header>
+            <h1>Meu blog</h1>
+            <p>Vou compartilhar conhecimentos sobre a fé católica.</p>
+            <button>❤️<span>0</span></button>
+            <button>👍<span>0</span></button>
+            <button>👎​<span>0</span></button>
+
         </header>
         <main>
             <section>
-            <img src="eucaristia.avif" alt="Eucaristia">
-           
-            <h2>Meu primeiro post</h2>
-            <p>Por: Nathalia Ribas Borecki</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar um pouco sobre a minha fé.</p>
+                <img src="eucaristia.avif" alt="Eucaristia">
+
+                <h2>Meu primeiro post</h2>
+                <p>Por: Nathalia Ribas Borecki</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar um pouco sobre a minha fé.</p>
                 <button>❤️<span>0</span></button>
                 <button>👍<span>0</span></button>
                 <button>👎​<span>0</span></button>
-                </section>
-                 <section>
-           
-                    <img src="santateresa.jpeg" alt="Santa Teresa d'Ávila">
-           
-            <h2>Uma frase de Santa Teresa d'Ávila</h2>
-            <p>Por: Nathalia Ribas Borecki</p>
-            <p>O essencial não é pensar muito, é amar muito.</p>
+            </section>
+            <section>
+
+                <img src="santateresa.jpeg" alt="Santa Teresa d'Ávila">
+
+                <h2>Uma frase de Santa Teresa d'Ávila</h2>
+                <p>Por: Nathalia Ribas Borecki</p>
+                <p>O essencial não é pensar muito, é amar muito.</p>
                 <button>❤️<span>0</span></button>
                 <button>👍<span>0</span></button>
                 <button>👎​<span>0</span></button>
-                </section>
-                 
-           
-                    <img src="santafaustina.jpg" alt="Santa Faustina Kowalska">
-           <section>
-            <h2>Uma frase de Santa Faustina Kowalska</h2>
-            <p>Por: Nathalia Ribas Borecki</p>
-            <p>A misericórdia é a flor do amor.</p>
+            </section>
+            <section>
+
+                <img src="santafaustina.jpg" alt="Santa Faustina Kowalska">
+
+                <h2>Uma frase de Santa Faustina Kowalska</h2>
+                <p>Por: Nathalia Ribas Borecki</p>
+                <p>A misericórdia é a flor do amor.</p>
                 <button>❤️<span>0</span></button>
                 <button>👍<span>0</span></button>
                 <button>👎​<span>0</span></button>
-                </section>
-                
-                 <img src="carloacutis.jpeg" alt="Carlo Acutis">
-           
+            </section>
+
+            <img src="carloacutis.jpeg" alt="Carlo Acutis">
+
             <h2>Uma frase de São Carlo Acutis</h2>
             <p>Por: Nathalia Ribas Borecki</p>
             <p>A Eucaristia é a minha autoestrada para o céu.</p>
-                <button>❤️<span>0</span></button>
-                <button>👍<span>0</span></button>
-                <button>👎​<span>0</span></button>
-                </section>
+            <button>❤️<span>0</span></button>
+            <button>👍<span>0</span></button>
+            <button>👎​<span>0</span></button>
+            </section>
         </main>
-       <footer>
-        <p> 2026 Meu Blog Católico | Desenvolvido por Nathalia</p>
-       </footer>
+        <footer>
+            <p> 2026 Meu Blog Católico | Desenvolvido por Nathalia</p>
+        </footer>
         <script>
- const botoes = document.querySelectorAll("button");
- botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else{
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    })
-     </script>
+            const botoes = document.querySelectorAll("button");
+            botoes.forEach(function (botao) {
+                let curtiu = false;
+                botao.addEventListener("click", botaoClicado);
+                function botaoClicado() {
+                    console.log("fui clicado");
+                    let texto = botao.querySelector("span");
+                    if (curtiu === false) {
+                        texto.textContent++;
+                        curtiu = true;
+                    } else {
+                        texto.textContent--;
+                        curtiu = false;
+                    }
+                }
+            })
+        </script>
     </body>
 
     </html>
